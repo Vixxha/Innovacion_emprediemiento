@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8faf7;
+  --foreground: #1c2b1e;
+  --card-bg: #ffffff;
+  --border-color: #e2e8df;
+  --green-primary: #15803d;
+  --green-hover: #166534;
+  --green-light: #ecfdf5;
+  --green-accent: #22c55e;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5c8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a390;
+}
+
+button, a, input, select, summary { -webkit-tap-highlight-color: transparent; }
+:is(a, button, input, select, summary):focus-visible { outline: 3px solid #0369a1; outline-offset: 3px; }
+.skip-link { position: fixed; top: 8px; left: 8px; z-index: 100; transform: translateY(-160%); background: white; padding: 12px; border-radius: 8px; }
+.skip-link:focus { transform: translateY(0); }
+@media print { header button { display: none; } }
+

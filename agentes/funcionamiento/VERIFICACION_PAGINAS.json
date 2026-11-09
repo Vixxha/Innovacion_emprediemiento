@@ -1,0 +1,263 @@
+{
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Resumen general",
+      "sections": []
+    },
+    {
+      "route": "/ahorros",
+      "status": 200,
+      "title": "Ahorro y ganancias",
+      "sections": [
+        "ahorros"
+      ]
+    },
+    {
+      "route": "/cuarteles",
+      "status": 200,
+      "title": "Manejo y control",
+      "sections": [
+        "cuarteles"
+      ]
+    },
+    {
+      "route": "/simulador",
+      "status": 200,
+      "title": "Simulador de utilidades",
+      "sections": [
+        "simulador"
+      ]
+    },
+    {
+      "route": "/alertas",
+      "status": 200,
+      "title": "Alertas del predio",
+      "sections": [
+        "alertas"
+      ]
+    },
+    {
+      "route": "/labores",
+      "status": 200,
+      "title": "Cuaderno de labores",
+      "sections": [
+        "labores"
+      ]
+    },
+    {
+      "route": "/fuentes",
+      "status": 200,
+      "title": "Sensores y fuentes",
+      "sections": [
+        "fuentes"
+      ]
+    },
+    {
+      "route": "/permisos",
+      "status": 200,
+      "title": "Control de permisos",
+      "sections": [
+        "permisos"
+      ]
+    }
+  ],
+  "responsive": [
+    {
+      "width": 320,
+      "route": "/",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "width": 320,
+      "route": "/ahorros",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "width": 320,
+      "route": "/cuarteles",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "width": 320,
+      "route": "/simulador",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "width": 320,
+      "route": "/alertas",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "width": 320,
+      "route": "/labores",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "width": 320,
+      "route": "/fuentes",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "width": 320,
+      "route": "/permisos",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "width": 390,
+      "route": "/ahorros",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "width": 390,
+      "route": "/cuarteles",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "width": 390,
+      "route": "/simulador",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "width": 390,
+      "route": "/alertas",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "width": 390,
+      "route": "/labores",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "width": 390,
+      "route": "/fuentes",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "width": 390,
+      "route": "/permisos",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "width": 768,
+      "route": "/ahorros",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "width": 768,
+      "route": "/cuarteles",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "width": 768,
+      "route": "/simulador",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "width": 768,
+      "route": "/alertas",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "width": 768,
+      "route": "/labores",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "width": 768,
+      "route": "/fuentes",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "width": 768,
+      "route": "/permisos",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/ahorros",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/cuarteles",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/simulador",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/alertas",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/labores",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/fuentes",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/permisos",
+      "viewport": 1440,
+      "document": 1440
+    }
+  ],
+  "overflows": [],
+  "errors": [],
+  "interactionChecks": "Alertas -> Cuartel 2; navegación por enlace; Febrero; tabla total214; simulador6 sliders"
+}

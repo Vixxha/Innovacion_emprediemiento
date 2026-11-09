@@ -1,0 +1,54 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Resumen general"
+    },
+    {
+      "route": "/ahorros",
+      "status": 200,
+      "title": "Ahorro y ganancias"
+    },
+    {
+      "route": "/cuarteles",
+      "status": 200,
+      "title": "Manejo y control"
+    },
+    {
+      "route": "/simulador",
+      "status": 200,
+      "title": "Simulador de utilidades"
+    },
+    {
+      "route": "/alertas",
+      "status": 200,
+      "title": "Alertas del predio"
+    },
+    {
+      "route": "/labores",
+      "status": 200,
+      "title": "Cuaderno de labores"
+    },
+    {
+      "route": "/fuentes",
+      "status": 200,
+      "title": "Sensores y fuentes"
+    },
+    {
+      "route": "/permisos",
+      "status": 200,
+      "title": "Control de permisos"
+    }
+  ],
+  "queryFallbacks": [
+    "999",
+    "-2",
+    "1.5",
+    "abc"
+  ],
+  "selectionPersistedAfterReload": 2,
+  "responsiveChecks": 12,
+  "errors": [],
+  "failedResponses": []
+}

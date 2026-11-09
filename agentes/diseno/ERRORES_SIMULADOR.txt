@@ -1,0 +1,30 @@
+CORRECCIONES DEL SIMULADOR - 2026-11-09
+Archivo modificado: components/ProfitSimulator.js.
+
+Errores reproducidos en Chrome antes del cambio:
+- Cambiar rendimiento a12000 y agua a27 mantenia Actual24ha marcado.
+- Los presets solo establecian superficie,rendimiento,precio y retenian ahorros.
+- La diferencia de margen restaba porcentajes previamente redondeados.
+
+Correcciones:
+- Tres presets con los seis parametros completos.
+- Coincidencia exacta de los seis valores y aria-pressed en los botones.
+- Estado Personalizado cuando ningun preset coincide.
+- Diferencia calculada con numeros sin redondear, formateada al mostrarla.
+- Garantia/utilidad pura reemplazadas por supuestos de demostracion.
+- Etiquetas accesibles reparadas: hectareas,hectarea,agroquimicos con acentos.
+- Costos base y formulas economicas originales conservados.
+
+QA REAL CHROME, http://127.0.0.1:3000/simulador
+Rendimiento cambiado por ArrowRight: Personalizado y cero presets activos.
+Agua cambiada por ArrowRight:27; Actual activado con Enter restaura26.
+Presets activados por teclado y sus seis valores comprobados:
+Actual:[24,11500,2800,26,21,18]
+Mediano:[12,10000,2600,26,21,18]
+Grande:[50,13000,3100,26,21,18]
+Caso de redondeo probado con teclas Home:7000kg/ha y1800CLP/kg.
+Margen base82.6190476%, escenario84.3579365%, delta1.7388889pp.
+Pantalla correcta:84.4% (+1.7 puntos porcentuales); antes mostraba1.8pp.
+Sin excepciones JavaScript en la validacion final con servidor limpio.
+Captura: agentes/diseno/simulador-personalizado.png.
+Sin instalaciones ni publicaciones; no se editaron otros componentes/helpers.

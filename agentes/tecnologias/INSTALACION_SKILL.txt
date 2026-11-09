@@ -1,0 +1,23 @@
+INSTALACION DE DASHBOARD-DESIGN
+Fecha: 09-11-2026
+
+Estado: NO instalada y NO aplicada.
+
+Origen consultado mediante herramienta web conectada:
+https://codexskills.dev/skills/design/dashboard-design/
+La página muestra la guía y declara dos archivos: SKILL.md y agents/openai.yaml.
+No se obtuvo el paquete original ni el CLI para inspección y ejecución.
+
+Intentos:
+- CLI: la herramienta web rechaza text/javascript; la variante raw tampoco abre.
+- ZIP: curl.exe terminó con código 7, sin conexión a codexskills.dev:443.
+- Ruta directa a SKILL.md e install.sh: no accesibles mediante herramienta web.
+
+La documentación del proveedor indica --dir <path> como destino configurable:
+https://codexskills.dev/guides/install-codex-skills/
+Si se obtiene y revisa el CLI, el destino previsto es agentes/tecnologias/skills.
+No se ejecutaron instaladores ni se escribió fuera del proyecto.
+No se creó una copia parcial presentada como instalación completa.
+
+Limitación: la red del entorno impide descargar y revisar el instalador.
+No se solicitó escalamiento porque está deshabilitado por la configuración.

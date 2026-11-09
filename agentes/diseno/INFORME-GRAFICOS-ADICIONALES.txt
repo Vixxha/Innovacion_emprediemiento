@@ -1,0 +1,22 @@
+GRAFICOS ADICIONALES DE AHORRO - 2026-11-09
+
+Ruta /ahorros: se integraron dos graficos SVG reales bajo el grafico mensual.
+1. Linea de ahorro acumulado: 18, 45, 80, 121, 169 y 214 miles CLP/ha.
+2. Barras horizontales por categoria: agua96, agroquimicos71, mano de obra47.
+Porcentajes derivados:44,9%,33,2%,22%; suma100,1% por redondeo explicitado.
+Los tres graficos usan la misma paleta accesible y escalas desde cero.
+Etiquetas directas, unidades y tablas alternativas desplegables en cada uno.
+Grafico original explica el pico Enero48 mil CLP/ha.
+Sin nuevas dependencias; helpers ResponsiveSvg, ChartCard y chartUtils existentes.
+SavingsTrendChart exportado con datos predeterminados para reutilizar en resumen.
+
+QA REAL CHROME Y PLAYWRIGHT, SERVIDOR http://127.0.0.1:3000/ahorros
+1440,390 y320px sin overflow horizontal del documento.
+Puntos acumulados y tres aportes exactos confirmados en los tres anchos.
+Texto SVG de12px conservado en todos los anchos.
+Tres tablas desplegables abiertas y comprobadas.
+Captura320 revisada visualmente: ejes, puntos y etiquetas legibles sin solaparse.
+Sin excepciones JavaScript. Google Fonts externo bloqueado por red del entorno;
+la pagina conserva tipografia alternativa. Consola tambien reporto un recurso404.
+Capturas: ahorros-insights-1440.png, ahorros-insights-390.png,
+ahorros-insights-320.png en esta carpeta.

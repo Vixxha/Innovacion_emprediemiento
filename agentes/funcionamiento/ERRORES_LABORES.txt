@@ -1,0 +1,10 @@
+ERRORES CORREGIDOS EN OPERATIONSLOG.JS
+
+Persistencia local de labores demo, restaurada después de la hidratación. Se validan registros, límites, tipos y claves únicas; los datos dañados se omiten con aviso.
+Corregida la opción inicial de riego. Campos numéricos obligatorios: horas 1–12, trabajadores 1–20, costo 0–1.000.000.000 CLP en múltiplos de 1.000. El formulario también valida al guardar.
+Guardado y fallos de almacenamiento muestran mensajes honestos: no existe sincronización real. El ahorro del 22 % se identifica como estimación demo.
+Modal nativo con título/descripción accesibles, Escape, foco inicial, ciclo de Tab y Shift+Tab, restauración del foco y desplazamiento vertical en teléfonos bajos.
+Buscador y campos con labels asociados, estado sin resultados, tabla con desplazamiento horizontal local.
+La reproducción inicial en Chrome3000 quedó impedida por errores500 en los chunks; se reanudó con el servidor reparado. No se afirma una reproducción previa concluyente.
+QA real Chrome3000 aprobado a 390x400: selección inicial coherente, ciclo de foco en ambas direcciones, Escape/restauración, campos vacíos y costos negativos rechazados, guardado, navegación y recarga con persistencia, búsqueda vacía, JSON/payload dañados y almacenamiento bloqueado con aviso honesto. Dialog de 368 px con contenido desplazable de 463 px; cero errores JavaScript.
+Prueba reproducible: node agentes/funcionamiento/verificar-labores.cjs.

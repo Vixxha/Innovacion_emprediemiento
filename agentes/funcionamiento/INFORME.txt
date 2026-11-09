@@ -1,0 +1,8 @@
+﻿AGENTE: FUNCIONAMIENTO
+Responsabilidad: navegación, interacciones y consistencia de datos.
+Código revisado: cer-analytics-prototipo/dashboard.js y app.js, desde la raíz.
+Cambios: menú activo según sección, aria-current, conservación del foco al
+seleccionar mes/cuartel y rechazo de acciones o índices inválidos.
+Validación realizada: sintaxis JS y pruebas en Chrome/Playwright de navegación,
+Febrero ($45 mil), Cuartel 2 (19 % de humedad) y foco, sin errores JavaScript.
+Los datos son de demostración. No se implementaron conexiones reales.

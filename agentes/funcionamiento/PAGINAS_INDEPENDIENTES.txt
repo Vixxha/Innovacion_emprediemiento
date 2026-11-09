@@ -1,0 +1,21 @@
+﻿VERIFICACION DE PAGINAS NEXT.JS
+Fecha: 09-11-2026
+
+Secciones separadas en archivos app/<seccion>/page.js:
+/ (resumen), /ahorros, /cuarteles, /simulador, /alertas, /labores,
+/fuentes y /permisos. Menu y cabecera compartidos en DashboardShell.
+Fuentes y permisos tienen componentes independientes.
+
+Chrome/Playwright: 8 rutas respondieron200; titulo y enlace activo correctos;
+cada pagina contiene exclusivamente su seccion. No se usa scroll entre secciones.
+32 comprobaciones de pantalla (320,390,768,1440px x8 rutas), sin desbordamiento
+horizontal de documento. Se corrigio el ajuste de buscador y boton de labores.
+
+Interacciones: alerta de humedad abre /cuarteles?cuartel=2; enlace de menu
+abre /ahorros; Febrero selecciona45.000/ha; tabla de datos suma214 mil/ha;
+enlace de simulacion abre /simulador con6 controles de rango etiquetados.
+Cero errores JavaScript. Permisos: persistencia local validada por el agente.
+
+Resultados detallados: VERIFICACION_PAGINAS.json.
+Script local: verificar-paginas.cjs (usa Playwright y Chrome disponibles en
+esta maquina, sin agregar dependencias al proyecto).

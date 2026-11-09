@@ -1,0 +1,15 @@
+﻿ORGANIZACION DEL DASHBOARD - REVISION DIRECTA
+Se abrio http://127.0.0.1:3000 en Chrome y se tomo una captura nueva antes de
+modificar la pagina: agentes/diseno/revision-actual-antes.png.
+La inspeccion confirmo que no existia un boton para organizar el resumen.
+
+Se agrego Organizar dashboard, encima de los indicadores.
+Permite cambiar orden de indicadores, grafico principal y herramientas mediante
+flechas. Guardar distribucion conserva el orden en este navegador; Cancelar
+revierte el borrador y Restablecer orden recupera la distribucion original.
+
+Pruebas reales: subir grafico con teclado, guardar y recargar, cancelar cambios,
+restablecer orden y cuatro anchos (320/390/768/1440), sin overflow ni erroresJS.
+Resultados: VERIFICACION_ORGANIZADOR.json.
+Capturas nuevas: organizador-actual-1440.png, organizador-edicion-1440.png y
+organizador-edicion-390.png en agentes/diseno/.

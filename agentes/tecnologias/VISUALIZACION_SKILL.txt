@@ -1,0 +1,41 @@
+﻿VISUALIZACION DE DATOS - RESUMEN BREVE
+Fecha: 09-11-2026
+
+Fuente pública consultada por el coordinador:
+https://codexskills.dev/skills/design/data-visualization-design/
+Instalación: no lograda; la descarga del CLI falló por conectividad (curl, código 7).
+La guía pública se está usando como referencia; esto no equivale a instalar el skill.
+No se repitieron descargas en esta tarea.
+
+Criterios de implementación comunicados:
+- Elegir la visualización según la pregunta: evolución, comparación o meta.
+- Mostrar unidades y contexto; usar etiquetas legibles y formatos consistentes.
+- Mantener los colores de cada categoría y ofrecer descripción accesible.
+- Ajustar los gráficos al ancho disponible.
+
+Cinco gráficos adicionales implementados:
+1. Ahorro acumulado: evolución del ahorro durante la temporada.
+2. Ahorro por categoría: comparación de agua, agroquímicos y horas hombre.
+3. Humedad frente a meta: comparación de la humedad por cuartel con su objetivo.
+4. Ranking de ahorro por cuartel: comparación ordenada del ahorro estimado.
+5. Costos del simulador: comparación de costos según el escenario seleccionado.
+
+Los datos y escenarios son de demostración; no representan mediciones en vivo
+ni resultados económicos verificados.
+
+Organización reutilizable verificada en components/charts/:
+- chartUtils.js: colores compartidos y formatos CLP/es-CL, sumas y escala.
+- ResponsiveSvg.js: contenedor SVG adaptable mediante ResizeObserver,
+  con título y descripción accesibles.
+- ChartCard.js: tarjeta común con título, subtítulo y contenido del gráfico.
+Esta estructura permite compartir presentación y utilidades entre las páginas.
+
+Estado final: cinco gráficos implementados y compilación de producción correcta.
+Chrome/Playwright: 16 comprobaciones de página y tamaño, sin desbordamientos,
+errores JavaScript ni recursos HTTP fallidos durante la prueba final.
+Comprobados acumulado18/45/80/121/169/214, aportes96/71/47, enlaces de cuartel
+y cambio de costos al mover el control de agua con teclado. SVG: texto>=12px.
+Capturas de móvil, escritorio y emulación de deuteranopia en agentes/diseno/.
+Detalle de pruebas: agentes/funcionamiento/VERIFICACION_GRAFICOS.json.
+Compilación: COMPILACION_GRAFICOS.log. Google Fonts no pudo optimizarse por
+red durante el build; hay fuente alternativa del sistema.

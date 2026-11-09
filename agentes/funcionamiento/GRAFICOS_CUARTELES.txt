@@ -1,0 +1,9 @@
+GRÁFICOS DE CUARTELES
+
+components/charts/ParcelCharts.js agrega dos gráficos antes del manejo de cuarteles en app/cuarteles/page.js.
+Humedad: eje común 0–40 %, banda objetivo interpretada desde humedadMeta, lectura y meta rotuladas; círculo azul dentro del rango y rombo ocre fuera de él.
+Ahorro: barras horizontales ordenadas de mayor a menor, eje desde cero hasta 250 miles de CLP por ha y etiquetas directas.
+Ambos incluyen descripción accesible, leyenda textual y tabla desplegable con enlaces /cuarteles?cuartel=id.
+Las estimaciones por cuartel no se suman ni se comparan con la serie mensual.
+QA Chrome/Playwright en servidor existente 3000: 360, 390, 768 y 1440 px sin desbordamiento ni errores JS; etiquetas SVG de 12 px; enlace de tabla selecciona Cuartel 2. Captura graficos-cuarteles-390.png revisada visualmente.
+No se editaron helpers, datos ni ParcelManagement.

@@ -1,0 +1,68 @@
+﻿CER ANALYTICS - RESUMEN BREVE
+Fecha: 09-11-2026
+
+Trabajo de los tres agentes organizado en agentes/:
+- funcionamiento/: informes, separación de sensores/permisos y comprobación de rutas.
+- diseno/: gráfico SVG corregido, informes y capturas para 320,390,768,1440px.
+- tecnologias/: este resumen, instalación de habilidad y compilación de validación.
+
+Aplicación actual: Next.js 14, React 18, Tailwind CSS y lucide-react.
+Cada sección tiene una página propia en app/: resumen, ahorros, cuarteles,
+simulador, alertas, labores, fuentes y permisos. El menú usa enlaces reales.
+Los avisos abren /cuarteles?cuartel=ID. Cabecera y menú se comparten.
+
+Gráfico: escala desde cero, unidades miles CLP/ha, categorías proporcionales,
+selección accesible, tabla y totales calculados. Temporada: 96+71+47=214 mil/ha.
+Comparación corregida: base supuesta1.450.000 + ahorro214.000 =1.664.000 (+14,8%).
+Se corrigió además la barra de ahorro21% que mostraba79%.
+
+Datos simulados. Sin órdenes reales a dispositivos ni backend. Permisos demo
+persisten en navegador; las labores nuevas también se guardan localmente.
+
+Ejecución: npm run dev, abrir http://localhost:3000.
+El prototipo anterior en cer-analytics-prototipo/ conserva su estructura HTML.
+
+Compilación de producción: correcta, con salida aislada en .next-validacion
+bajo esta carpeta. Advertencia de red al optimizar Google Fonts; hay fuente
+alternativa del sistema. Ver informes de funcionamiento y diseño para pruebas.
+
+dashboard-design: no se pudo descargar el CLI por restricción de conexión.
+No instalado. Detalles en INSTALACION_SKILL.txt.
+
+AMPLIACION DE GRAFICOS
+Se implementaron cinco gráficos adicionales: acumulado, aporte por categoria,
+humedad frente a meta, ranking de ahorro/cuartel y costos del simulador.
+Componentes reutilizables en components/charts/. El resumen reutiliza la
+curva acumulada. Cada gráfico tiene unidades, escala y alternativa tabular.
+Se consulto la guia publica data-visualization-design; no se pudo descargar
+el instalador por conectividad. Detalles en VISUALIZACION_SKILL.txt.
+
+
+VALIDACION FINAL DE VISUALIZACIONES
+Compilacion de produccion completada correctamente (salida0).
+16 comprobaciones (4paginas x4anchos:320,390,768,1440), sin overflow ni erroresJS.
+Valores y cambios interactivos comprobados, tablas alternativas y textoSVG>=12px.
+Detalles: ../funcionamiento/VERIFICACION_GRAFICOS.json.
+
+AJUSTE DEL GRAFICO PRINCIPAL
+Se sustituyo la linea del resumen por barras mensuales de mayor tamano,
+con escala0-50 milCLP/ha, valores18/27/35/41/48/45, seleccion por mes,
+tabla alternativa y enlace al desglose. El grafico principal de /ahorros
+se amplio a405px de altura; los complementarios mantienen280px.
+Codigo: components/charts/MainSavingsChart.js y components/SavingsChart.js.
+
+ORGANIZACION DEL RESUMEN
+Boton Organizar dashboard en el resumen: subir/bajar bloques, guardar en
+navegador, cancelar y restablecer. Se reviso directamente la pagina actual en
+Chrome, con capturas nuevas y pruebas de persistencia y adaptacion de pantalla.
+Codigo: components/DashboardOrganizer.js. Informe en agentes/funcionamiento/.
+
+REVISION Y CORRECCION DE ERRORES
+Se reparo el servidor con cache de desarrollo independiente (.next-dev).
+Ocho rutas responden200 y 12 comprobaciones responsive no presentan overflow.
+Se corrigieron persistencia y validacion de labores, modal de teclado,
+seleccion completa de escenarios, redondeo de margen y cuartel en la URL.
+Formularios probados en Chrome; compilacion de produccion correcta.
+Informe: agentes/diseno/REVISION_DISENO_Y_ERRORES.md.
+Plantilla Design Report: flujo DOCX no disponible; referencia sin modificar.
+

@@ -1,0 +1,24 @@
+REVISION DE GRAFICOS NEXT.JS - 2026-11-09
+
+Archivos: components/SavingsAndProfits.js y components/SavingsChart.js.
+Grafico SVG con eje desde cero, ticks 0-50 y unidades miles CLP/ha.
+ResizeObserver mantiene altura de 285px y texto de 12px en cada ancho.
+Las barras conservan su escala exacta: 4,4 unidades SVG por cada mil CLP/ha.
+Series y leyenda: agua azul, agroquimicos verde, mano de obra ambar.
+Seleccion por botones nativos con teclado, aria-pressed y detalle aria-live.
+Tabla desplegable: totales derivados 96 + 71 + 47 = 214 mil CLP/ha.
+Comparacion demo corregida: 1.450.000 + 214.000 = 1.664.000 CLP/ha; +14,8%.
+El supuesto economico y los datos de demostracion se indican en pantalla.
+
+VALIDACION REAL EN CHROME + PLAYWRIGHT EXISTENTE
+Ruta: http://127.0.0.1:3100/ahorros
+Anchos probados: 1440, 768, 390 y 320px, sin overflow del documento.
+SVG ancho real: 1070, 414, 324 y 254px; altura 285px en todos.
+Proporcionalidad exacta de las 18 barras confirmada en todos los anchos.
+Febrero seleccionado con Enter: 45.000 CLP/ha, 1.080.000 CLP en 24ha.
+Tabla abierta y total de temporada comprobado: 214.
+Porcentaje visible comprobado: +14,8%.
+Sin errores JavaScript durante la prueba.
+Capturas ahorros-1440.png, ahorros-768.png, ahorros-390.png y ahorros-320.png.
+Captura de 320px revisada visualmente: ticks y meses legibles.
+No se instalaron dependencias ni se modificaron otras rutas/componentes.

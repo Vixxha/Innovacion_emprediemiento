@@ -1,0 +1,10 @@
+SEPARACIÓN DE FUENTES Y PERMISOS
+
+DataSources.js y DataPermissions.js son componentes independientes para /fuentes y /permisos.
+GovernanceAndSources.js conserva compatibilidad como contenedor de ambos componentes.
+Fuentes: tabla con desplazamiento horizontal local, encabezados accesibles y contador calculado desde los datos.
+Permisos: tarjetas adaptables, botones con aria-label/aria-pressed, foco visible y avisos accesibles.
+Los permisos de demostración se conservan en localStorage después de la hidratación; se validan los valores guardados y se tolera almacenamiento bloqueado o dañado.
+Se indica que son datos de demostración, sin accesos reales, vencimientos automáticos ni auditoría en servidor.
+Validación: los tres componentes compilan con SWC. Chrome/Playwright a 390 px confirmó activar/revocar, persistencia tras recarga, permisos sin desbordamiento y tabla de 600 px dentro de un área desplazable de 322 px, sin errores JavaScript.
+No se modificaron rutas, Sidebar, Header ni otros componentes.

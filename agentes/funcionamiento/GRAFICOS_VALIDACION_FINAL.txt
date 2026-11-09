@@ -1,0 +1,24 @@
+﻿GRAFICOS ADICIONALES - VALIDACION FINAL
+Fecha: 09-11-2026
+
+Cinco graficos nuevos y grafico mensual mejorado. Resumen reutiliza acumulado.
+16 combinaciones de pagina/tamano: /, /ahorros, /cuarteles, /simulador
+con anchos320,390,768,1440px. Sin desbordamientos de documento.
+EtiquetasSVG de al menos12px. Descripciones accesibles y tablas alternativas.
+
+Datos comprobados:
+- Acumulado18,45,80,121,169,214 milesCLP/ha.
+- Aportes96,71,47 milesCLP/ha; total214.
+- Febrero seleccionable con boton; tres tablas visibles en ahorro.
+- Tabla de cuarteles permite abrir y seleccionar Cuartel2.
+- Simulador: mover ahorro de agua26%->40% con teclado cambia costoCER
+  de281.200 a228.000CLP/ha. Total escenario717.700; ahorro272.300CLP/ha.
+
+Sin erroresJavaScript ni recursosHTTP fallidos durante la prueba final.
+Compilacion de produccion correcta. FuentesGoogle no optimizadas por limite
+externo de red durante build; fuente de sistema disponible.
+
+Capturas en agentes/diseno/: ahorro-insights y simulador-costos-390.png;
+ahorros-deuteranopia-390.png muestra emulacion de vision deuteranopia.
+Resultados completos: VERIFICACION_GRAFICOS.json.
+Script local: verificar-graficos.cjs usa Chrome y Playwright ya disponibles.

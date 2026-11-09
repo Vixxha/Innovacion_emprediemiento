@@ -1,0 +1,12 @@
+﻿INFORMACIÓN DE LOS TRES AGENTES
+funcionamiento/: informes y verificación de navegación e interacciones.
+diseno/: informes y capturas de escritorio y móvil.
+tecnologias/: resumen técnico e intento de instalación de dashboard-design.
+
+Las páginas de la aplicación están separadas en app/<seccion>/page.js.
+El menú usa rutas propias y la estructura común está en components/DashboardShell.js.
+El código ejecutable se mantiene en app/, components/ y data/.
+Guardar informes y evidencias en la carpeta correspondiente del agente.
+
+Las capturas dashboard-*.png corresponden al prototipo HTML anterior.
+Las capturas ahorros-*.png y los informes nuevos corresponden a Next.js.
